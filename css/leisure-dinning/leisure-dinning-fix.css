@@ -1,0 +1,9 @@
+.leisure-dinning #myCarousel {
+    clip-path: inset(0 0 5% 0);
+}
+
+
+.leisure-dinning .menu-banner img {
+    width: 250px;
+    height: 250px;
+}

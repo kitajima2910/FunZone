@@ -1,0 +1,144 @@
+/* 
+██████╗ ██╗███╗   ██╗    ██████╗  █████╗ ██╗
+██╔══██╗██║████╗  ██║    ██╔══██╗██╔══██╗██║
+██████╔╝██║██╔██╗ ██║    ██║  ██║███████║██║
+██╔══██╗██║██║╚██╗██║    ██║  ██║██╔══██║██║
+██████╔╝██║██║ ╚████║    ██████╔╝██║  ██║██║
+╚═════╝ ╚═╝╚═╝  ╚═══╝    ╚═════╝ ╚═╝  ╚═╝╚═╝
+                                             */
+/* hiệu ứng hover img bự ra - started */
+.leisure-dinning-img{
+  overflow: hidden;
+}
+.leisure-dinning-img img:hover{
+  transform: scale(1.5);
+  transition: all 2s;
+}
+/* hiệu ứng hover img bự ra - end */
+
+.leisure-dinning-pizza-hut .gio-hang{
+    background-color: #D0B251;
+    font-size: 2em;
+    border-radius: 1em;
+    padding: .1em .5em .1em .5em;
+    color: black;
+    position: fixed;
+    /* Hiện đè lên những cái khác - chỉ sử dụng với position */
+    z-index: 9999;
+    /* chỉnh vị trí */
+    left: 81%;
+  }
+  
+  .leisure-dinning-pizza-hut > h1 {
+    font-family: 'Bangers', cursive;
+    font-size: 3em;
+    color: rgb(0, 0, 0);
+    /* padding: .5em;
+    border-radius: 1em;
+    width: 350px; */
+    text-shadow: -2px 0 #D0B251, 0 2px #D0B251, 2px 0 #D0B251, 0 -2px #D0B251;
+    /* background-color: #D0B251; */
+  }
+  
+  .leisure-dinning-pizza-hut b {
+    font-family: 'Baloo Bhai', cursive;
+    font-size: 1.5em;
+  }
+  
+  .leisure-dinning-pizza-hut p {
+    font-family: 'Paytone One', sans-serif;
+    font-size: 1.5em;
+    color: rgb(129, 3, 3);
+  }
+ 
+  .leisure-dinning-pizza-hut .khung-mon-an {
+    padding: 1em;
+  }
+  
+  .leisure-dinning-pizza-hut .khung-mon-an li{
+    font-family: 'Arimo', sans-serif;
+  }
+  .leisure-dinning-pizza-hut .khung-mon-an > div {
+    background-color: white;
+  }
+  
+  .leisure-dinning-pizza-hut .khung-mon-an .mon-an:hover {
+    transition-duration: .5s;
+    box-shadow:0 0 20px rgb(206, 205, 205);
+  }
+  
+  .leisure-dinning-pizza-hut .khung-mon-an > div {
+    border: solid thin rgb(200, 200, 200);
+    border-radius: 1em;
+    padding: .5em;
+  }
+  
+  .leisure-dinning-pizza-hut .khung-mon-an > div > div {
+    padding: 1em 1em 0 1em;
+  }
+  
+  .leisure-dinning-pizza-hut .khung-mon-an > div > div > div {
+    text-align: right;
+  }
+  
+  .leisure-dinning-pizza-hut .khung-mon-an button {
+    border: 0;
+    background-color: #D0B251;
+    padding: .3em .7em .3em .7em;
+    font-size: 1em;
+    color: black;
+    font-weight: 700;
+    font-family: 'Arimo', sans-serif;
+  }
+  
+  .leisure-dinning-pizza-hut .khung-mon-an button:hover {
+    background-color: rgb(189, 146, 6);
+    color: black;
+    border: 0;
+  }
+
+  /* Hiệu ứng button - start */
+  button {
+    z-index: 1;
+    font-size: inherit;
+    font-family: inherit;
+    color: white;
+    padding: 0.5em 1em;
+    outline: none;
+    border: none;
+    background-color: hsl(236, 32%, 26%);
+  }
+  
+  button:hover {
+    cursor: pointer;
+    animation: jelly 0.5s;
+  }
+  
+  @keyframes jelly {
+    0%,
+    100% {
+      transform: scale(1, 1);
+    }
+    25% {
+      transform: scale(0.9, 1.1);
+    }
+    50% {
+      transform: scale(1.1, 0.9);
+    }
+    75% {
+      transform: scale(0.95, 1.05);
+    }
+  }
+  /* Hiệu ứng button - end */
+
+  .leisure-dinning-pizza-hut .chi-tiet-mon-an{
+    text-align: left;
+  }
+  .leisure-dinning-pizza-hut .chi-tiet-mon-an p{
+    font-size: .9em;
+    font-weight: 700;
+  }
+  
+.leisure-dinning-pizza-hut .modal-close{
+  border-radius: 1em;
+}

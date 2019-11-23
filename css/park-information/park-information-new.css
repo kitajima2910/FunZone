@@ -1,0 +1,17 @@
+.park-information-new-1 .row-margin {
+    margin: 15px;
+}
+
+.park-information-new-1 img {
+    border-radius: .75rem;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, .5);
+}
+
+.park-information-new-1 .new-img {
+    width: 200px;
+    height: 200px;
+}
+
+.park-information-new-1 .row-img img {
+    margin-bottom: 15px;
+}

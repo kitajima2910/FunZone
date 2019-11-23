@@ -1,0 +1,144 @@
+/* 
+██████╗ ██╗███╗   ██╗    ██████╗  █████╗ ██╗
+██╔══██╗██║████╗  ██║    ██╔══██╗██╔══██╗██║
+██████╔╝██║██╔██╗ ██║    ██║  ██║███████║██║
+██╔══██╗██║██║╚██╗██║    ██║  ██║██╔══██║██║
+██████╔╝██║██║ ╚████║    ██████╔╝██║  ██║██║
+╚═════╝ ╚═╝╚═╝  ╚═══╝    ╚═════╝ ╚═╝  ╚═╝╚═╝
+                                             */
+
+/* hiệu ứng hover img bự ra - started */
+
+.leisure-dinning-img {
+  overflow: hidden;
+}
+
+.leisure-dinning-img img:hover {
+  transform: scale(1.5);
+  transition: all 2s;
+}
+
+/* hiệu ứng hover img bự ra - end */
+
+.leisure-dinning-starbucks .gio-hang {
+  background-color: #AC7947;
+  font-size: 2em;
+  border-radius: 1em;
+  padding: .1em .5em .1em .5em;
+  color: white;
+  position: fixed;
+  /* Hiện đè lên những cái khác - chỉ sử dụng với position */
+  z-index: 9999;
+  /* chỉnh vị trí */
+  left: 81%;
+}
+
+.leisure-dinning-starbucks>h1 {
+  font-family: 'Bangers', cursive;
+  font-size: 3em;
+  color: #AC7947;
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
+.leisure-dinning-starbucks b {
+  font-family: 'Baloo Bhai', cursive;
+  font-size: 1.5em;
+}
+
+.leisure-dinning-starbucks p {
+  font-family: 'Paytone One', sans-serif;
+  font-size: 1.5em;
+  color: rgb(129, 3, 3);
+}
+
+.leisure-dinning-starbucks .khung-mon-an {
+  padding: 1em;
+}
+
+.leisure-dinning-starbucks .khung-mon-an li {
+  font-family: 'Arimo', sans-serif;
+}
+
+.leisure-dinning-starbucks .khung-mon-an>div {
+  background-color: white;
+}
+
+.leisure-dinning-starbucks .khung-mon-an .mon-an:hover {
+  transition-duration: .5s;
+  box-shadow: 0 0 20px rgb(121, 120, 120);
+}
+
+.leisure-dinning-starbucks .khung-mon-an>div {
+  border: solid thin rgb(200, 200, 200);
+  border-radius: 1em;
+  padding: .5em;
+}
+
+.leisure-dinning-starbucks .khung-mon-an>div>div {
+  padding: 1em 1em 0 1em;
+}
+
+.leisure-dinning-starbucks .khung-mon-an>div>div>div {
+  text-align: right;
+}
+
+.leisure-dinning-starbucks .khung-mon-an button {
+  border: 0;
+  background-color: #AC7947;
+  padding: .3em .7em .3em .7em;
+  font-size: 1em;
+  font-family: 'Arimo', sans-serif;
+}
+
+.leisure-dinning-starbucks .khung-mon-an button:hover {
+  background-color: rgb(141, 77, 13);
+  border: 0;
+}
+
+/* Hiệu ứng button - start */
+
+button {
+  z-index: 1;
+  font-size: inherit;
+  font-family: inherit;
+  color: white;
+  padding: 0.5em 1em;
+  outline: none;
+  border: none;
+  background-color: hsl(236, 32%, 26%);
+}
+
+button:hover {
+  cursor: pointer;
+  animation: jelly 0.5s;
+}
+
+@keyframes jelly {
+  0%, 100% {
+    transform: scale(1, 1);
+  }
+  25% {
+    transform: scale(0.9, 1.1);
+  }
+  50% {
+    transform: scale(1.1, 0.9);
+  }
+  75% {
+    transform: scale(0.95, 1.05);
+  }
+}
+
+/* Hiệu ứng button - end */
+
+.leisure-dinning-starbucks .chi-tiet-mon-an {
+  text-align: left;
+}
+
+.leisure-dinning-starbucks .chi-tiet-mon-an p {
+  font-size: .9em;
+  font-weight: 700;
+}
+
+.leisure-dinning-starbucks .modal-close{
+  border-radius: 1em;
+}

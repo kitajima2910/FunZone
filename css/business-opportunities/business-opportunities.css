@@ -1,0 +1,47 @@
+.business-opportunities textarea{
+    resize: none;
+}
+
+.business-opportunities .padding{
+    padding: 20px;
+    
+}
+
+.business-opportunities .a{
+    text-align: center;
+    color: rgb(99, 144, 228);
+}
+
+.business-opportunities .x{
+    padding:20px;   
+    text-align: center;     
+}
+
+.business-opportunities .text{
+    padding: 20px; 
+    color: blue;
+}
+
+.business-opportunities .xx{
+    padding: 0;
+    margin: 0;   
+}
+
+.business-opportunities h3{
+    color: red;
+    margin-bottom: 0%;
+}
+
+.business-opportunities strong{
+    text-shadow: 2px 2px 2px rgb(240, 116, 137);
+}
+
+.business-opportunities h2{
+    text-shadow: 2px 2px 2px rgb(109, 128, 238);
+}
+
+.business-opportunities h4{
+    color:blue;
+    font-size: 2.5em;
+
+}

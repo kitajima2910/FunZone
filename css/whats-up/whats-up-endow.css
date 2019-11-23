@@ -1,0 +1,33 @@
+h1 {
+    font-family: 'Baloo Bhai', cursive;
+    text-align: center;
+}
+
+ul {
+    margin: 0 0 0 1.5em;
+}
+
+span {
+    font-family: 'Itim', cursive;
+}
+
+.content {
+    background-color: white;
+}
+p,
+li,
+th,
+td {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.1em;
+    font-weight: 700;
+}
+
+b {
+    font-size: 1.3em;
+    font-family: 'Itim', cursive;
+}
+
+a:hover {
+    color: red;
+}

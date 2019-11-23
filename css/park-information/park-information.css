@@ -1,0 +1,40 @@
+.park-information {
+    margin: 15px 0;
+}
+
+.park-information .content {
+    width: 250px;
+    height: 429px;
+    display: table;
+    margin: 5px auto;
+    padding: 5px;
+    border: 1px dashed gray;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, .5), -1px 1px 2px rgba(0, 0, 0, .5), -1px -1px 2px rgba(0, 0, 0, .5);
+}
+
+.park-information .content img {
+    width: 250px;
+    height: 250px;
+}
+
+.park-information .content a {
+    text-decoration: none;
+}
+
+.customPagination, .paginacaoCursor {
+    margin: 20px 5px;
+    padding: 5px 8px;
+    color: #fff;
+    background: #007CFF;
+    cursor: pointer;
+}
+
+.park-information ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+}
+
+.park-information hr {
+    margin: 0;
+}

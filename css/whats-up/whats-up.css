@@ -1,0 +1,29 @@
+.whats-up-khungttsk{
+    display: inline-block;
+    border: solid thin rgb(216, 212, 212);
+    border-radius: 1em;
+    padding: .5em;
+    margin: .5em 0em .5em 0em;
+    background-color: white;
+}
+.whats-up-khungttsk:hover{
+    box-shadow: 0 0 4px 1px rgb(0, 162, 255);
+    border: solid rgb(0, 162, 255);
+    transition-duration: .5s;
+}
+.whats-up-khungttsk H3{
+    font-family: 'Comfortaa', cursive;
+    color: black;
+    text-shadow: 1px 1px 1px black;
+}
+.whats-up-khungttsk p{
+    font-family: 'Varela Round', sans-serif;
+    color: black;
+}
+.whats-up-khungttsk img{
+    width: 100%;
+    height: auto;
+}
+.whats-up-khungimg{
+    padding: 0;
+}

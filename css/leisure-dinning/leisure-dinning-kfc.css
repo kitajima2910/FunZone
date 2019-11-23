@@ -1,0 +1,143 @@
+/* 
+██████╗ ██╗███╗   ██╗    ██████╗  █████╗ ██╗
+██╔══██╗██║████╗  ██║    ██╔══██╗██╔══██╗██║
+██████╔╝██║██╔██╗ ██║    ██║  ██║███████║██║
+██╔══██╗██║██║╚██╗██║    ██║  ██║██╔══██║██║
+██████╔╝██║██║ ╚████║    ██████╔╝██║  ██║██║
+╚═════╝ ╚═╝╚═╝  ╚═══╝    ╚═════╝ ╚═╝  ╚═╝╚═╝ */
+
+/* hiệu ứng hover img bự ra - started */
+.leisure-dinning-img {
+  overflow: hidden;
+  border-radius: .5em;
+}
+
+.leisure-dinning-img img:hover {
+  transform: scale(1.5);
+  transition: all 2s;
+}
+
+/* hiệu ứng hover img bự ra - end */
+
+.leisure-dinning-kfc .gio-hang {
+  background-color: #f50202;
+  font-size: 2em;
+  border-radius: 1em;
+  padding: .1em .5em .1em .5em;
+  color: white;
+  position: fixed;
+  /* Hiện đè lên những cái khác - chỉ sử dụng với position */
+  z-index: 9999;
+  /* chỉnh vị trí */
+  left: 81%;
+}
+
+.leisure-dinning-kfc>h1 {
+  font-family: 'Bangers', cursive;
+  font-size: 3em;
+  color: rgb(250, 35, 35);
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black
+}
+
+.leisure-dinning-kfc b {
+  font-family: 'Baloo Bhai', cursive;
+  font-size: 1.5em;
+}
+
+.leisure-dinning-kfc p {
+  font-family: 'Paytone One', sans-serif;
+  font-size: 1.5em;
+  color: rgb(129, 3, 3);
+}
+
+.leisure-dinning-kfc .khung-mon-an {
+  padding: 1em;
+}
+
+.leisure-dinning-kfc .khung-mon-an li {
+  font-family: 'Arimo', sans-serif;
+}
+
+.leisure-dinning-kfc .khung-mon-an>div {
+  background-color: white;
+}
+
+.leisure-dinning-kfc .khung-mon-an .mon-an:hover {
+  transition-duration: .5s;
+  box-shadow: 0 0 20px rgba(95, 95, 95, 0.8);
+}
+
+.leisure-dinning-kfc .khung-mon-an>div {
+  border: solid thin rgb(200, 200, 200);
+  border-radius: 1em;
+  padding: .5em;
+}
+
+.leisure-dinning-kfc .khung-mon-an>div>div {
+  padding: 1em 1em 0 1em;
+}
+
+.leisure-dinning-kfc .khung-mon-an>div>div>div {
+  text-align: right;
+}
+
+.leisure-dinning-kfc .khung-mon-an button {
+  border: 0;
+  background-color: #C9302C;
+  padding: .3em .7em .3em .7em;
+  font-size: 1em;
+  font-family: 'Arimo', sans-serif;
+}
+
+.leisure-dinning-kfc .khung-mon-an button:hover {
+  background-color: rgb(182, 13, 7);
+  border: 0;
+}
+
+/* Hiệu ứng button - start */
+
+button {
+  z-index: 1;
+  font-size: inherit;
+  font-family: inherit;
+  color: white;
+  padding: 0.5em 1em;
+  outline: none;
+  border: none;
+  background-color: hsl(236, 32%, 26%);
+}
+
+button:hover {
+  cursor: pointer;
+  animation: jelly 0.5s;
+}
+
+@keyframes jelly {
+  0%, 100% {
+    transform: scale(1, 1);
+  }
+  25% {
+    transform: scale(0.9, 1.1);
+  }
+  50% {
+    transform: scale(1.1, 0.9);
+  }
+  75% {
+    transform: scale(0.95, 1.05);
+  }
+}
+
+/* Hiệu ứng button - end */
+
+.leisure-dinning-kfc .chi-tiet-mon-an {
+  text-align: left;
+}
+
+.leisure-dinning-kfc .chi-tiet-mon-an p {
+  font-size: .9em;
+  font-weight: 700;
+}
+
+.leisure-dinning-kfc .modal-close{
+  border-radius: 1em;
+}

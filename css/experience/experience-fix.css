@@ -1,0 +1,67 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.experience-img-map {
+    margin: 15px 0;
+}
+
+.experience-img-map img {
+    width: 100%;
+}
+
+.experience-img-map .group-map {
+    position: relative;
+}
+
+.experience-img-map img[alt="Are1 of Park"] {
+    position: absolute;
+    width: 57%;
+    top: .8%;
+    left: 35.1%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+
+.experience-img-map img[alt="Are2 of Park"] {
+    position: absolute;
+    width: 37%;
+    top: 0;
+    left: 0.1%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.experience-img-map img[alt="Are3 of Park"] {
+    position: absolute;
+    width: 56%;
+    top: 40%;
+    left: 43.1%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.area-2-img img {
+    display: table;
+    margin: 15px auto;
+}
+
+.area-2-row {
+    margin-top: 15px;
+}
+
+#area-3 .row-fix,
+#area-2 .row-fix,
+#area-1 .row-fix {
+    margin: 0;
+}
+
+/* Media Query */
+@media (min-width: 992px) {
+    .area-2-img img {
+        max-width: 100%;
+        width: 100%;
+        height: 200px;
+    }
+}
