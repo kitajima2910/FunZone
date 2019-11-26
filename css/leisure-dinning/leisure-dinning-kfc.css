@@ -7,6 +7,7 @@
 ╚═════╝ ╚═╝╚═╝  ╚═══╝    ╚═════╝ ╚═╝  ╚═╝╚═╝ */
 
 /* hiệu ứng hover img bự ra - started */
+
 .leisure-dinning-img {
   overflow: hidden;
   border-radius: .5em;
@@ -17,7 +18,7 @@
   transition: all 2s;
 }
 
-/* hiệu ứng hover img bự ra - end */
+/* hiệu ứng hover img bự ra - the end */
 
 .leisure-dinning-kfc .gio-hang {
   background-color: #f50202;
@@ -58,10 +59,6 @@
   font-family: 'Arimo', sans-serif;
 }
 
-.leisure-dinning-kfc .khung-mon-an>div {
-  background-color: white;
-}
-
 .leisure-dinning-kfc .khung-mon-an .mon-an:hover {
   transition-duration: .5s;
   box-shadow: 0 0 20px rgba(95, 95, 95, 0.8);
@@ -71,9 +68,10 @@
   border: solid thin rgb(200, 200, 200);
   border-radius: 1em;
   padding: .5em;
+  background-color: white;
 }
 
-.leisure-dinning-kfc .khung-mon-an>div>div {
+.leisure-dinning-kfc .khung-mon-an .content-mon-an {
   padding: 1em 1em 0 1em;
 }
 
@@ -93,6 +91,30 @@
   background-color: rgb(182, 13, 7);
   border: 0;
 }
+
+/* Các nút tăng giảm số lượng - started */
+
+.leisure-dinning-kfc .khung-mon-an .modal-footer-chi-tiet {
+  text-align: center;
+}
+
+.leisure-dinning-kfc .khung-mon-an .cong-tru {
+  border-radius: 1em;
+}
+
+.leisure-dinning-kfc .khung-mon-an .txtBox {
+  border: solid gray;
+  font-family: 'Arimo', sans-serif;
+  font-weight: 700;
+  text-align: center;
+  width: 30px;
+}
+
+.leisure-dinning-kfc .khung-mon-an .them-vao-gio-hang {
+  width: 60px;
+}
+
+/* Các nút tăng giảm số lượng - the end */
 
 /* Hiệu ứng button - start */
 
@@ -138,6 +160,6 @@ button:hover {
   font-weight: 700;
 }
 
-.leisure-dinning-kfc .modal-close{
+.leisure-dinning-kfc .modal-close {
   border-radius: 1em;
 }

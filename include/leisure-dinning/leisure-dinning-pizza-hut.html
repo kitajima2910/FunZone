@@ -15,6 +15,12 @@
     <link rel="stylesheet" href="./../../css/home/home-navbar.css">
     <link rel="stylesheet" href="./../../css/home/home-fix.css">
     <link rel="stylesheet" href="./../../css/leisure-dinning/leisure-dinning-pizza-hut.css">
+
+    <!-- Scripts -->
+    <script src="./../../js/jquery.min.js"></script>
+    <script src="./../../js/bootstrap.min.js"></script>
+    <script src="./../../js/angular.min.js"></script>
+    <script src="./../../js/leisure-dinning/leisure-dinning-pizza-hut.js"></script>
 </head>
 
 <body>
@@ -116,11 +122,10 @@
                         <div class="leisure-dinning-img"><img
                                 src="./../../img/leisure-dinning-pizza-hut/leisure-dinning-pizza-hut-pizza.png"
                                 class="img-responsive img-rounded" alt=""></div>
-                        <div>
+                        <div class="content-mon-an">
                             <b>SUN PIZZA</b>
                             <p>275.000 VNĐ</p>
                             <div>
-
                                 <button type="button" class="btn btn-info btn-lg" data-toggle="modal"
                                     data-target="#myModal">Detail</button>
 
@@ -155,12 +160,27 @@
                                                 </div>
                                             </div>
                                             <div class="modal-footer">
-                                                <p style="float: left;">275.000 VNĐ</p>
-                                                <button type="button" class="btn btn-primary "
-                                                    ng-click="count = count+1">
-                                                    <span class="glyphicon glyphicon glyphicon-plus"></span> <i
-                                                        class="fa fa-shopping-cart fw"> </i>
-                                                </button>
+                                                <div class="row modal-footer-chi-tiet">
+                                                    <p class="col-xs-12 col-sm-4">275.000 VNĐ</p>
+                                                    <div class="col-xs-7 col-sm-6">
+                                                        <button ng-click="minQuantity($event.target)" value=""
+                                                            class="cong-tru"><span id="kfc1-t"
+                                                                class="glyphicon glyphicon-minus"></span></button>
+                                                        <input type="text" value="{{kfc1}}" ng-model="kfc1"
+                                                            name="txtBox" id="txtBox" class="txtBox">
+                                                        <button ng-click="addQuantity($event.target)" value=""
+                                                            class="cong-tru"><span
+                                                                class="glyphicon glyphicon glyphicon-plus "
+                                                                id="kfc1-c"></span></button>
+                                                    </div>
+                                                    <div class="col-xs-5 col-sm-2">
+                                                        <button type="button" class="btn btn-primary them-vao-gio-hang"
+                                                            ng-click="count = count + +kfc1">
+                                                            <span class="glyphicon glyphicon glyphicon-plus"></span> <i
+                                                                class="fa fa-shopping-cart fw"> </i>
+                                                        </button>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -174,14 +194,12 @@
                         <div class="leisure-dinning-img"><img
                                 src="./../../img/leisure-dinning-pizza-hut/leisure-dinning-pizza-hut-pizza-1.png"
                                 class="img-responsive img-rounded" alt=""></div>
-                        <div>
+                        <div class="content-mon-an">
                             <b>MOON PIZZA</b>
                             <p>235.000 VNĐ</p>
                             <div>
-
                                 <button type="button" class="btn btn-info btn-lg" data-toggle="modal"
                                     data-target="#myModal1">Detail</button>
-
 
                                 <!-- Modal -->
                                 <div class="modal fade" id="myModal1" role="dialog">
@@ -215,15 +233,29 @@
                                                 </div>
                                             </div>
                                             <div class="modal-footer">
-                                                <p style="float: left;">235.000 VNĐ</p>
-                                                <button type="button" class="btn btn-primary "
-                                                    ng-click="count = count+1">
-                                                    <span class="glyphicon glyphicon glyphicon-plus"></span> <i
-                                                        class="fa fa-shopping-cart fw"> </i>
-                                                </button>
+                                                <div class="row modal-footer-chi-tiet">
+                                                    <p class="col-xs-12 col-sm-4">235.000 VNĐ</p>
+                                                    <div class="col-xs-7 col-sm-6">
+                                                        <button ng-click="minQuantity($event.target)" value=""
+                                                            class="cong-tru"><span id="kfc2-t"
+                                                                class="glyphicon glyphicon-minus"></span></button>
+                                                        <input type="text" value="{{kfc2}}" ng-model="kfc2"
+                                                            name="txtBox" id="txtBox" class="txtBox">
+                                                        <button ng-click="addQuantity($event.target)" value=""
+                                                            class="cong-tru"><span
+                                                                class="glyphicon glyphicon glyphicon-plus "
+                                                                id="kfc2-c"></span></button>
+                                                    </div>
+                                                    <div class="col-xs-5 col-sm-2">
+                                                        <button type="button" class="btn btn-primary them-vao-gio-hang"
+                                                            ng-click="count = count + +kfc2">
+                                                            <span class="glyphicon glyphicon glyphicon-plus"></span> <i
+                                                                class="fa fa-shopping-cart fw"> </i>
+                                                        </button>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-
                                     </div>
                                 </div>
                             </div>
@@ -235,14 +267,12 @@
                         <div class="leisure-dinning-img"><img
                                 src="./../../img/leisure-dinning-pizza-hut/leisure-dinning-pizza-hut-pizza-2.png"
                                 class="img-responsive img-rounded" alt=""></div>
-                        <div>
+                        <div class="content-mon-an">
                             <b>PIZZA CARRIER</b>
                             <p>209.000 VNĐ</p>
                             <div>
-
                                 <button type="button" class="btn btn-info btn-lg" data-toggle="modal"
                                     data-target="#myModal2">Detail</button>
-
 
                                 <!-- Modal -->
                                 <div class="modal fade" id="myModal2" role="dialog">
@@ -276,15 +306,29 @@
                                                 </div>
                                             </div>
                                             <div class="modal-footer">
-                                                <p style="float: left;">209.000 VNĐ</p>
-                                                <button type="button" class="btn btn-primary "
-                                                    ng-click="count = count+1">
-                                                    <span class="glyphicon glyphicon glyphicon-plus"></span> <i
-                                                        class="fa fa-shopping-cart fw"> </i>
-                                                </button>
+                                                <div class="row modal-footer-chi-tiet">
+                                                    <p class="col-xs-12 col-sm-4">209.000 VNĐ</p>
+                                                    <div class="col-xs-7 col-sm-6">
+                                                        <button ng-click="minQuantity($event.target)" value=""
+                                                            class="cong-tru"><span id="kfc3-t"
+                                                                class="glyphicon glyphicon-minus"></span></button>
+                                                        <input type="text" value="{{kfc3}}" ng-model="kfc3"
+                                                            name="txtBox" id="txtBox" class="txtBox">
+                                                        <button ng-click="addQuantity($event.target)" value=""
+                                                            class="cong-tru"><span
+                                                                class="glyphicon glyphicon glyphicon-plus "
+                                                                id="kfc3-c"></span></button>
+                                                    </div>
+                                                    <div class="col-xs-5 col-sm-2">
+                                                        <button type="button" class="btn btn-primary them-vao-gio-hang"
+                                                            ng-click="count = count + +kfc3">
+                                                            <span class="glyphicon glyphicon glyphicon-plus"></span> <i
+                                                                class="fa fa-shopping-cart fw"> </i>
+                                                        </button>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-
                                     </div>
                                 </div>
                             </div>
@@ -296,14 +340,12 @@
                         <div class="leisure-dinning-img"><img
                                 src="./../../img/leisure-dinning-pizza-hut/leisure-dinning-pizza-hut-pizza-3.png"
                                 class="img-responsive img-rounded" alt=""></div>
-                        <div>
+                        <div class="content-mon-an">
                             <b>PIZZA SEAFOOD OIL</b>
                             <p>279.000 VNĐ</p>
                             <div>
-
                                 <button type="button" class="btn btn-info btn-lg" data-toggle="modal"
                                     data-target="#myModal3">Detail</button>
-
 
                                 <!-- Modal -->
                                 <div class="modal fade" id="myModal3" role="dialog">
@@ -331,15 +373,29 @@
                                                 </div>
                                             </div>
                                             <div class="modal-footer">
-                                                <p style="float: left;">279.000 VNĐ</p>
-                                                <button type="button" class="btn btn-primary "
-                                                    ng-click="count = count+1">
-                                                    <span class="glyphicon glyphicon glyphicon-plus"></span> <i
-                                                        class="fa fa-shopping-cart fw"> </i>
-                                                </button>
+                                                <div class="row modal-footer-chi-tiet">
+                                                    <p class="col-xs-12 col-sm-4">279.000 VNĐ</p>
+                                                    <div class="col-xs-7 col-sm-6">
+                                                        <button ng-click="minQuantity($event.target)" value=""
+                                                            class="cong-tru"><span id="kfc4-t"
+                                                                class="glyphicon glyphicon-minus"></span></button>
+                                                        <input type="text" value="{{kfc4}}" ng-model="kfc4"
+                                                            name="txtBox" id="txtBox" class="txtBox">
+                                                        <button ng-click="addQuantity($event.target)" value=""
+                                                            class="cong-tru"><span
+                                                                class="glyphicon glyphicon glyphicon-plus "
+                                                                id="kfc4-c"></span></button>
+                                                    </div>
+                                                    <div class="col-xs-5 col-sm-2">
+                                                        <button type="button" class="btn btn-primary them-vao-gio-hang"
+                                                            ng-click="count = count + +kfc4">
+                                                            <span class="glyphicon glyphicon glyphicon-plus"></span> <i
+                                                                class="fa fa-shopping-cart fw"> </i>
+                                                        </button>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-
                                     </div>
                                 </div>
                             </div>
@@ -351,14 +407,13 @@
                         <div class="leisure-dinning-img"><img
                                 src="./../../img/leisure-dinning-pizza-hut/leisure-dinning-pizza-hut-pizza-4.png"
                                 class="img-responsive img-rounded" alt=""></div>
-                        <div>
+                        <div class="content-mon-an">
                             <b>PIZZA SEAFOOD BLACK PEPPER</b>
                             <p>199.000 VNĐ</p>
                             <div>
 
                                 <button type="button" class="btn btn-info btn-lg" data-toggle="modal"
                                     data-target="#myModal4">Detail</button>
-
 
                                 <!-- Modal -->
                                 <div class="modal fade" id="myModal4" role="dialog">
@@ -389,15 +444,29 @@
                                                 </div>
                                             </div>
                                             <div class="modal-footer">
-                                                <p style="float: left;">199.000 VNĐ</p>
-                                                <button type="button" class="btn btn-primary "
-                                                    ng-click="count = count+1">
-                                                    <span class="glyphicon glyphicon glyphicon-plus"></span> <i
-                                                        class="fa fa-shopping-cart fw"> </i>
-                                                </button>
+                                                <div class="row modal-footer-chi-tiet">
+                                                    <p class="col-xs-12 col-sm-4">199.000 VNĐ</p>
+                                                    <div class="col-xs-7 col-sm-6">
+                                                        <button ng-click="minQuantity($event.target)" value=""
+                                                            class="cong-tru"><span id="kfc5-t"
+                                                                class="glyphicon glyphicon-minus"></span></button>
+                                                        <input type="text" value="{{kfc5}}" ng-model="kfc5"
+                                                            name="txtBox" id="txtBox" class="txtBox">
+                                                        <button ng-click="addQuantity($event.target)" value=""
+                                                            class="cong-tru"><span
+                                                                class="glyphicon glyphicon glyphicon-plus "
+                                                                id="kfc5-c"></span></button>
+                                                    </div>
+                                                    <div class="col-xs-5 col-sm-2">
+                                                        <button type="button" class="btn btn-primary them-vao-gio-hang"
+                                                            ng-click="count = count + +kfc5">
+                                                            <span class="glyphicon glyphicon glyphicon-plus"></span> <i
+                                                                class="fa fa-shopping-cart fw"> </i>
+                                                        </button>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-
                                     </div>
                                 </div>
                             </div>
@@ -409,14 +478,12 @@
                         <div class="leisure-dinning-img"><img
                                 src="./../../img/leisure-dinning-pizza-hut/leisure-dinning-pizza-hut-pizza-5.png"
                                 class="img-responsive img-rounded" alt=""></div>
-                        <div>
+                        <div class="content-mon-an">
                             <b>PIZZA MEAT AND SPREAD</b>
                             <p>279.000 VNĐ</p>
                             <div>
-
                                 <button type="button" class="btn btn-info btn-lg" data-toggle="modal"
                                     data-target="#myModal5">Detail</button>
-
 
                                 <!-- Modal -->
                                 <div class="modal fade" id="myModal5" role="dialog">
@@ -445,15 +512,29 @@
                                                 </div>
                                             </div>
                                             <div class="modal-footer">
-                                                <p style="float: left;">279.000 VNĐ</p>
-                                                <button type="button" class="btn btn-primary "
-                                                    ng-click="count = count+1">
-                                                    <span class="glyphicon glyphicon glyphicon-plus"></span> <i
-                                                        class="fa fa-shopping-cart fw"> </i>
-                                                </button>
+                                                <div class="row modal-footer-chi-tiet">
+                                                    <p class="col-xs-12 col-sm-4">279.000 VNĐ</p>
+                                                    <div class="col-xs-7 col-sm-6">
+                                                        <button ng-click="minQuantity($event.target)" value=""
+                                                            class="cong-tru"><span id="kfc6-t"
+                                                                class="glyphicon glyphicon-minus"></span></button>
+                                                        <input type="text" value="{{kfc6}}" ng-model="kfc6"
+                                                            name="txtBox" id="txtBox" class="txtBox">
+                                                        <button ng-click="addQuantity($event.target)" value=""
+                                                            class="cong-tru"><span
+                                                                class="glyphicon glyphicon glyphicon-plus "
+                                                                id="kfc6-c"></span></button>
+                                                    </div>
+                                                    <div class="col-xs-5 col-sm-2">
+                                                        <button type="button" class="btn btn-primary them-vao-gio-hang"
+                                                            ng-click="count = count + +kfc6">
+                                                            <span class="glyphicon glyphicon glyphicon-plus"></span> <i
+                                                                class="fa fa-shopping-cart fw"> </i>
+                                                        </button>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-
                                     </div>
                                 </div>
                             </div>
@@ -468,14 +549,12 @@
                         <div class="leisure-dinning-img"><img
                                 src="./../../img/leisure-dinning-pizza-hut/leisure-dinning-pizza-hut-mi-y.png"
                                 class="img-responsive img-rounded" alt=""></div>
-                        <div>
+                        <div class="content-mon-an">
                             <b>FRIED MEAT</b>
                             <p>110.000 VNĐ</p>
                             <div>
-
                                 <button type="button" class="btn btn-info btn-lg" data-toggle="modal"
                                     data-target="#myModal6">Detail</button>
-
 
                                 <!-- Modal -->
                                 <div class="modal fade" id="myModal6" role="dialog">
@@ -503,15 +582,29 @@
                                                 </div>
                                             </div>
                                             <div class="modal-footer">
-                                                <p style="float: left;">110.000 VNĐ</p>
-                                                <button type="button" class="btn btn-primary "
-                                                    ng-click="count = count+1">
-                                                    <span class="glyphicon glyphicon glyphicon-plus"></span> <i
-                                                        class="fa fa-shopping-cart fw"> </i>
-                                                </button>
+                                                <div class="row modal-footer-chi-tiet">
+                                                    <p class="col-xs-12 col-sm-4">110.000 VNĐ</p>
+                                                    <div class="col-xs-7 col-sm-6">
+                                                        <button ng-click="minQuantity($event.target)" value=""
+                                                            class="cong-tru"><span id="kfc7-t"
+                                                                class="glyphicon glyphicon-minus"></span></button>
+                                                        <input type="text" value="{{kfc7}}" ng-model="kfc7"
+                                                            name="txtBox" id="txtBox" class="txtBox">
+                                                        <button ng-click="addQuantity($event.target)" value=""
+                                                            class="cong-tru"><span
+                                                                class="glyphicon glyphicon glyphicon-plus "
+                                                                id="kfc7-c"></span></button>
+                                                    </div>
+                                                    <div class="col-xs-5 col-sm-2">
+                                                        <button type="button" class="btn btn-primary them-vao-gio-hang"
+                                                            ng-click="count = count + +kfc7">
+                                                            <span class="glyphicon glyphicon glyphicon-plus"></span> <i
+                                                                class="fa fa-shopping-cart fw"> </i>
+                                                        </button>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-
                                     </div>
                                 </div>
                             </div>
@@ -523,14 +616,12 @@
                         <div class="leisure-dinning-img"><img
                                 src="./../../img/leisure-dinning-pizza-hut/leisure-dinning-pizza-hut-mi-y-1.png"
                                 class="img-responsive img-rounded" alt=""></div>
-                        <div>
+                        <div class="content-mon-an">
                             <b>SEAFOOD YELLOW</b>
                             <p>100.000 VNĐ</p>
                             <div>
-
                                 <button type="button" class="btn btn-info btn-lg" data-toggle="modal"
                                     data-target="#myModal7">Detail</button>
-
 
                                 <!-- Modal -->
                                 <div class="modal fade" id="myModal7" role="dialog">
@@ -560,15 +651,29 @@
                                                 </div>
                                             </div>
                                             <div class="modal-footer">
-                                                <p style="float: left;">100.000 VNĐ</p>
-                                                <button type="button" class="btn btn-primary "
-                                                    ng-click="count = count+1">
-                                                    <span class="glyphicon glyphicon glyphicon-plus"></span> <i
-                                                        class="fa fa-shopping-cart fw"> </i>
-                                                </button>
+                                                <div class="row modal-footer-chi-tiet">
+                                                    <p class="col-xs-12 col-sm-4">100.000 VNĐ</p>
+                                                    <div class="col-xs-7 col-sm-6">
+                                                        <button ng-click="minQuantity($event.target)" value=""
+                                                            class="cong-tru"><span id="kfc8-t"
+                                                                class="glyphicon glyphicon-minus"></span></button>
+                                                        <input type="text" value="{{kfc8}}" ng-model="kfc8"
+                                                            name="txtBox" id="txtBox" class="txtBox">
+                                                        <button ng-click="addQuantity($event.target)" value=""
+                                                            class="cong-tru"><span
+                                                                class="glyphicon glyphicon glyphicon-plus "
+                                                                id="kfc8-c"></span></button>
+                                                    </div>
+                                                    <div class="col-xs-5 col-sm-2">
+                                                        <button type="button" class="btn btn-primary them-vao-gio-hang"
+                                                            ng-click="count = count + +kfc8">
+                                                            <span class="glyphicon glyphicon glyphicon-plus"></span> <i
+                                                                class="fa fa-shopping-cart fw"> </i>
+                                                        </button>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-
                                     </div>
                                 </div>
                             </div>
@@ -580,14 +685,12 @@
                         <div class="leisure-dinning-img"><img
                                 src="./../../img/leisure-dinning-pizza-hut/leisure-dinning-pizza-hut-mi-y-2.png"
                                 class="img-responsive img-rounded" alt=""></div>
-                        <div>
+                        <div class="content-mon-an">
                             <b>SEAFOOD COOKED BLACK</b>
                             <p>120.000 VNĐ</p>
                             <div>
-
                                 <button type="button" class="btn btn-info btn-lg" data-toggle="modal"
                                     data-target="#myModal8">Detail</button>
-
 
                                 <!-- Modal -->
                                 <div class="modal fade" id="myModal8" role="dialog">
@@ -617,15 +720,29 @@
                                                 </div>
                                             </div>
                                             <div class="modal-footer">
-                                                <p style="float: left;">120.000 VNĐ</p>
-                                                <button type="button" class="btn btn-primary "
-                                                    ng-click="count = count+1">
-                                                    <span class="glyphicon glyphicon glyphicon-plus"></span> <i
-                                                        class="fa fa-shopping-cart fw"> </i>
-                                                </button>
+                                                <div class="row modal-footer-chi-tiet">
+                                                    <p class="col-xs-12 col-sm-4">120.000 VNĐ</p>
+                                                    <div class="col-xs-7 col-sm-6">
+                                                        <button ng-click="minQuantity($event.target)" value=""
+                                                            class="cong-tru"><span id="kfc9-t"
+                                                                class="glyphicon glyphicon-minus"></span></button>
+                                                        <input type="text" value="{{kfc9}}" ng-model="kfc9"
+                                                            name="txtBox" id="txtBox" class="txtBox">
+                                                        <button ng-click="addQuantity($event.target)" value=""
+                                                            class="cong-tru"><span
+                                                                class="glyphicon glyphicon glyphicon-plus "
+                                                                id="kfc9-c"></span></button>
+                                                    </div>
+                                                    <div class="col-xs-5 col-sm-2">
+                                                        <button type="button" class="btn btn-primary them-vao-gio-hang"
+                                                            ng-click="count = count + +kfc9">
+                                                            <span class="glyphicon glyphicon glyphicon-plus"></span> <i
+                                                                class="fa fa-shopping-cart fw"> </i>
+                                                        </button>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-
                                     </div>
                                 </div>
                             </div>
@@ -637,14 +754,12 @@
                         <div class="leisure-dinning-img"><img
                                 src="./../../img/leisure-dinning-pizza-hut/leisure-dinning-pizza-hut-com-chien.png"
                                 class="img-responsive img-rounded" alt=""></div>
-                        <div>
+                        <div class="content-mon-an">
                             <b>SEAFOOD FRIED RICE</b>
                             <p>90.000 VNĐ</p>
                             <div>
-
                                 <button type="button" class="btn btn-info btn-lg" data-toggle="modal"
                                     data-target="#myModal9">Detail</button>
-
 
                                 <!-- Modal -->
                                 <div class="modal fade" id="myModal9" role="dialog">
@@ -673,15 +788,29 @@
                                                 </div>
                                             </div>
                                             <div class="modal-footer">
-                                                <p style="float: left;">90.000 VNĐ</p>
-                                                <button type="button" class="btn btn-primary "
-                                                    ng-click="count = count+1">
-                                                    <span class="glyphicon glyphicon glyphicon-plus"></span> <i
-                                                        class="fa fa-shopping-cart fw"> </i>
-                                                </button>
+                                                <div class="row modal-footer-chi-tiet">
+                                                    <p class="col-xs-12 col-sm-3">90.000 VNĐ</p>
+                                                    <div class="col-xs-7 col-sm-7">
+                                                        <button ng-click="minQuantity($event.target)" value=""
+                                                            class="cong-tru"><span id="kfc10-t"
+                                                                class="glyphicon glyphicon-minus"></span></button>
+                                                        <input type="text" value="{{kfc10}}" ng-model="kfc10"
+                                                            name="txtBox" id="txtBox" class="txtBox">
+                                                        <button ng-click="addQuantity($event.target)" value=""
+                                                            class="cong-tru"><span
+                                                                class="glyphicon glyphicon glyphicon-plus "
+                                                                id="kfc10-c"></span></button>
+                                                    </div>
+                                                    <div class="col-xs-5 col-sm-2">
+                                                        <button type="button" class="btn btn-primary them-vao-gio-hang"
+                                                            ng-click="count = count + +kfc10">
+                                                            <span class="glyphicon glyphicon glyphicon-plus"></span> <i
+                                                                class="fa fa-shopping-cart fw"> </i>
+                                                        </button>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-
                                     </div>
                                 </div>
                             </div>
@@ -693,14 +822,12 @@
                         <div class="leisure-dinning-img"><img
                                 src="./../../img/leisure-dinning-pizza-hut/leisure-dinning-pizza-hut-com-chien-1.png"
                                 class="img-responsive img-rounded" alt=""></div>
-                        <div>
+                        <div class="content-mon-an">
                             <b>FRIED RICE WITH BBQ CHICKEN WINGS</b>
                             <p>90.000 VNĐ</p>
                             <div>
-
                                 <button type="button" class="btn btn-info btn-lg" data-toggle="modal"
                                     data-target="#myModal10">Detail</button>
-
 
                                 <!-- Modal -->
                                 <div class="modal fade" id="myModal10" role="dialog">
@@ -730,15 +857,29 @@
                                                 </div>
                                             </div>
                                             <div class="modal-footer">
-                                                <p style="float: left;">90.000 VNĐ</p>
-                                                <button type="button" class="btn btn-primary "
-                                                    ng-click="count = count+1">
-                                                    <span class="glyphicon glyphicon glyphicon-plus"></span> <i
-                                                        class="fa fa-shopping-cart fw"> </i>
-                                                </button>
+                                                <div class="row modal-footer-chi-tiet">
+                                                    <p class="col-xs-12 col-sm-3">90.000 VNĐ</p>
+                                                    <div class="col-xs-7 col-sm-7">
+                                                        <button ng-click="minQuantity($event.target)" value=""
+                                                            class="cong-tru"><span id="kfc11-t"
+                                                                class="glyphicon glyphicon-minus"></span></button>
+                                                        <input type="text" value="{{kfc11}}" ng-model="kfc11"
+                                                            name="txtBox" id="txtBox" class="txtBox">
+                                                        <button ng-click="addQuantity($event.target)" value=""
+                                                            class="cong-tru"><span
+                                                                class="glyphicon glyphicon glyphicon-plus "
+                                                                id="kfc11-c"></span></button>
+                                                    </div>
+                                                    <div class="col-xs-5 col-sm-2">
+                                                        <button type="button" class="btn btn-primary them-vao-gio-hang"
+                                                            ng-click="count = count + +kfc11">
+                                                            <span class="glyphicon glyphicon glyphicon-plus"></span> <i
+                                                                class="fa fa-shopping-cart fw"> </i>
+                                                        </button>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-
                                     </div>
                                 </div>
                             </div>
@@ -750,14 +891,12 @@
                         <div class="leisure-dinning-img"><img
                                 src="./../../img/leisure-dinning-pizza-hut/leisure-dinning-pizza-hut-nui.png"
                                 class="img-responsive img-rounded" alt=""></div>
-                        <div>
+                        <div class="content-mon-an">
                             <b>BAKED MEAT BAKED</b>
                             <p>80.000 VNĐ</p>
                             <div>
-
                                 <button type="button" class="btn btn-info btn-lg" data-toggle="modal"
                                     data-target="#myModal11">Detail</button>
-
 
                                 <!-- Modal -->
                                 <div class="modal fade" id="myModal11" role="dialog">
@@ -783,15 +922,29 @@
                                                 </div>
                                             </div>
                                             <div class="modal-footer">
-                                                <p style="float: left;">80.000 VNĐ</p>
-                                                <button type="button" class="btn btn-primary "
-                                                    ng-click="count = count+1">
-                                                    <span class="glyphicon glyphicon glyphicon-plus"></span> <i
-                                                        class="fa fa-shopping-cart fw"> </i>
-                                                </button>
+                                                <div class="row modal-footer-chi-tiet">
+                                                    <p class="col-xs-12 col-sm-3">80.000 VNĐ</p>
+                                                    <div class="col-xs-7 col-sm-7">
+                                                        <button ng-click="minQuantity($event.target)" value=""
+                                                            class="cong-tru"><span id="kfc12-t"
+                                                                class="glyphicon glyphicon-minus"></span></button>
+                                                        <input type="text" value="{{kfc12}}" ng-model="kfc12"
+                                                            name="txtBox" id="txtBox" class="txtBox">
+                                                        <button ng-click="addQuantity($event.target)" value=""
+                                                            class="cong-tru"><span
+                                                                class="glyphicon glyphicon glyphicon-plus "
+                                                                id="kfc12-c"></span></button>
+                                                    </div>
+                                                    <div class="col-xs-5 col-sm-2">
+                                                        <button type="button" class="btn btn-primary them-vao-gio-hang"
+                                                            ng-click="count = count + +kfc12">
+                                                            <span class="glyphicon glyphicon glyphicon-plus"></span> <i
+                                                                class="fa fa-shopping-cart fw"> </i>
+                                                        </button>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-
                                     </div>
                                 </div>
                             </div>
@@ -807,14 +960,12 @@
                         <div class="leisure-dinning-img"><img
                                 src="./../../img/leisure-dinning-pizza-hut/leisure-dinning-pizza-hut-coca-cola.png"
                                 class="img-responsive img-rounded" alt=""></div>
-                        <div>
+                        <div class="content-mon-an">
                             <b>COCA COLA CAN</b>
                             <p>30.000 VNĐ</p>
                             <div>
-
                                 <button type="button" class="btn btn-info btn-lg" data-toggle="modal"
                                     data-target="#myModal12">Detail</button>
-
 
                                 <!-- Modal -->
                                 <div class="modal fade" id="myModal12" role="dialog">
@@ -839,15 +990,29 @@
                                                 </div>
                                             </div>
                                             <div class="modal-footer">
-                                                <p style="float: left;">30.000 VNĐ</p>
-                                                <button type="button" class="btn btn-primary "
-                                                    ng-click="count = count+1">
-                                                    <span class="glyphicon glyphicon glyphicon-plus"></span> <i
-                                                        class="fa fa-shopping-cart fw"> </i>
-                                                </button>
+                                                <div class="row modal-footer-chi-tiet">
+                                                    <p class="col-xs-12 col-sm-3">30.000 VNĐ</p>
+                                                    <div class="col-xs-7 col-sm-7">
+                                                        <button ng-click="minQuantity($event.target)" value=""
+                                                            class="cong-tru"><span id="kfc13-t"
+                                                                class="glyphicon glyphicon-minus"></span></button>
+                                                        <input type="text" value="{{kfc13}}" ng-model="kfc13"
+                                                            name="txtBox" id="txtBox" class="txtBox">
+                                                        <button ng-click="addQuantity($event.target)" value=""
+                                                            class="cong-tru"><span
+                                                                class="glyphicon glyphicon glyphicon-plus "
+                                                                id="kfc13-c"></span></button>
+                                                    </div>
+                                                    <div class="col-xs-5 col-sm-2">
+                                                        <button type="button" class="btn btn-primary them-vao-gio-hang"
+                                                            ng-click="count = count + +kfc13">
+                                                            <span class="glyphicon glyphicon glyphicon-plus"></span> <i
+                                                                class="fa fa-shopping-cart fw"> </i>
+                                                        </button>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-
                                     </div>
                                 </div>
                             </div>
@@ -859,14 +1024,12 @@
                         <div class="leisure-dinning-img"><img
                                 src="./../../img/leisure-dinning-pizza-hut/leisure-dinning-pizza-hut-heineken.png"
                                 class="img-responsive img-rounded" alt=""></div>
-                        <div>
+                        <div class="content-mon-an">
                             <b>HEINEKEN BEER</b>
                             <p>49.000 VNĐ</p>
                             <div>
-
                                 <button type="button" class="btn btn-info btn-lg" data-toggle="modal"
                                     data-target="#myModal13">Detail</button>
-
 
                                 <!-- Modal -->
                                 <div class="modal fade" id="myModal13" role="dialog">
@@ -891,15 +1054,29 @@
                                                 </div>
                                             </div>
                                             <div class="modal-footer">
-                                                <p style="float: left;">49.000 VNĐ</p>
-                                                <button type="button" class="btn btn-primary "
-                                                    ng-click="count = count+1">
-                                                    <span class="glyphicon glyphicon glyphicon-plus"></span> <i
-                                                        class="fa fa-shopping-cart fw"> </i>
-                                                </button>
+                                                <div class="row modal-footer-chi-tiet">
+                                                    <p class="col-xs-12 col-sm-3">49.000 VNĐ</p>
+                                                    <div class="col-xs-7 col-sm-7">
+                                                        <button ng-click="minQuantity($event.target)" value=""
+                                                            class="cong-tru"><span id="kfc14-t"
+                                                                class="glyphicon glyphicon-minus"></span></button>
+                                                        <input type="text" value="{{kfc14}}" ng-model="kfc14"
+                                                            name="txtBox" id="txtBox" class="txtBox">
+                                                        <button ng-click="addQuantity($event.target)" value=""
+                                                            class="cong-tru"><span
+                                                                class="glyphicon glyphicon glyphicon-plus "
+                                                                id="kfc14-c"></span></button>
+                                                    </div>
+                                                    <div class="col-xs-5 col-sm-2">
+                                                        <button type="button" class="btn btn-primary them-vao-gio-hang"
+                                                            ng-click="count = count + +kfc14">
+                                                            <span class="glyphicon glyphicon glyphicon-plus"></span> <i
+                                                                class="fa fa-shopping-cart fw"> </i>
+                                                        </button>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-
                                     </div>
                                 </div>
                             </div>
@@ -911,14 +1088,12 @@
                         <div class="leisure-dinning-img"><img
                                 src="./../../img/leisure-dinning-pizza-hut/leisure-dinning-pizza-hut-dasani.png"
                                 class="img-responsive img-rounded" alt=""></div>
-                        <div>
+                        <div class="content-mon-an">
                             <b>DASANI</b>
                             <p>20.000 VNĐ</p>
                             <div>
-
                                 <button type="button" class="btn btn-info btn-lg" data-toggle="modal"
                                     data-target="#myModal14">Detail</button>
-
 
                                 <!-- Modal -->
                                 <div class="modal fade" id="myModal14" role="dialog">
@@ -943,15 +1118,29 @@
                                                 </div>
                                             </div>
                                             <div class="modal-footer">
-                                                <p style="float: left;">20.000 VNĐ</p>
-                                                <button type="button" class="btn btn-primary "
-                                                    ng-click="count = count+1">
-                                                    <span class="glyphicon glyphicon glyphicon-plus"></span> <i
-                                                        class="fa fa-shopping-cart fw"> </i>
-                                                </button>
+                                                <div class="row modal-footer-chi-tiet">
+                                                    <p class="col-xs-12 col-sm-3">20.000 VNĐ</p>
+                                                    <div class="col-xs-7 col-sm-7">
+                                                        <button ng-click="minQuantity($event.target)" value=""
+                                                            class="cong-tru"><span id="kfc15-t"
+                                                                class="glyphicon glyphicon-minus"></span></button>
+                                                        <input type="text" value="{{kfc15}}" ng-model="kfc15"
+                                                            name="txtBox" id="txtBox" class="txtBox">
+                                                        <button ng-click="addQuantity($event.target)" value=""
+                                                            class="cong-tru"><span
+                                                                class="glyphicon glyphicon glyphicon-plus "
+                                                                id="kfc15-c"></span></button>
+                                                    </div>
+                                                    <div class="col-xs-5 col-sm-2">
+                                                        <button type="button" class="btn btn-primary them-vao-gio-hang"
+                                                            ng-click="count = count + +kfc15">
+                                                            <span class="glyphicon glyphicon glyphicon-plus"></span> <i
+                                                                class="fa fa-shopping-cart fw"> </i>
+                                                        </button>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-
                                     </div>
                                 </div>
                             </div>
@@ -1005,11 +1194,6 @@
     </div>
     <!-- END FOOTER -->
 
-    <!-- Scripts -->
-    <script src="./../../js/jquery.min.js"></script>
-    <script src="./../../js/bootstrap.min.js"></script>
-    <script src="./../../js/angular.min.js"></script>
-    <script src="./../../js/leisure-dinning/leisure-dinning-pizza-hut.js"></script>
 </body>
 
 </html>
