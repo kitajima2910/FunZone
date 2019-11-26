@@ -11,6 +11,7 @@
 
 .leisure-dinning-img {
   overflow: hidden;
+  border-radius: .5em;
 }
 
 .leisure-dinning-img img:hover {
@@ -59,10 +60,6 @@
   font-family: 'Arimo', sans-serif;
 }
 
-.leisure-dinning-starbucks .khung-mon-an>div {
-  background-color: white;
-}
-
 .leisure-dinning-starbucks .khung-mon-an .mon-an:hover {
   transition-duration: .5s;
   box-shadow: 0 0 20px rgb(121, 120, 120);
@@ -72,9 +69,10 @@
   border: solid thin rgb(200, 200, 200);
   border-radius: 1em;
   padding: .5em;
+  background-color: white;
 }
 
-.leisure-dinning-starbucks .khung-mon-an>div>div {
+.leisure-dinning-starbucks .khung-mon-an .content-mon-an {
   padding: 1em 1em 0 1em;
 }
 
@@ -94,6 +92,30 @@
   background-color: rgb(141, 77, 13);
   border: 0;
 }
+
+/* Các nút tăng giảm số lượng - started */
+
+.leisure-dinning-starbucks .khung-mon-an .modal-footer-chi-tiet {
+  text-align: center;
+}
+
+.leisure-dinning-starbucks .khung-mon-an .cong-tru {
+  border-radius: 1em;
+}
+
+.leisure-dinning-starbucks .khung-mon-an .txtBox {
+  border: solid gray;
+  font-family: 'Arimo', sans-serif;
+  font-weight: 700;
+  text-align: center;
+  width: 30px;
+}
+
+.leisure-dinning-starbucks .khung-mon-an .them-vao-gio-hang {
+  width: 60px;
+}
+
+/* Các nút tăng giảm số lượng - the end */
 
 /* Hiệu ứng button - start */
 
